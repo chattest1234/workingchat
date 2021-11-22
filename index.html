@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      video {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg); /* Safari and Chrome */
+        -moz-transform: rotateY(180deg); /* Firefox */
+      }
+
+      button{
+          user-select: none;
+          -webkit-user-select: none;
+          padding: 30px;
+          background-color: springgreen;
+          color: black;
+          border: none;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 30px;
+          position: fixed;
+          bottom: 10px;
+          cursor: pointer;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+
+      button:active{
+          background-color: red;
+          color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Record</button>
+    <script src="https://cdn.socket.io/4.4.0/socket.io.min.js" integrity="sha384-1fOn6VtTq3PWwfsOrk45LnYcGosJwzMHv+Xh/Jx5303FVOXzEnw0EpLv30mtjmlj" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
